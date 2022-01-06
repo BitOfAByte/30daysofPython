@@ -27,9 +27,13 @@ calcPercent(10,10)
 
 #Task 3
 
-s = "Hello I'm toby and you?"
-first, *middle, last = s.split()
+def name(s):
+    l = s.split()
+    new = ""
+    for i in range(len(l) - 1):
+        s = l[i]
+        new += (s[0].upper() + '.')
+    new += l[-1].title()
+    print(new)
 
-print(first,middle,last)
-
-
+name("Lene Boel Jensen")
